@@ -1,0 +1,51 @@
+.first{
+	width:100%;
+	height:100px;
+	background-color:black;
+}
+body{
+	margin:0;
+	overflow: hidden
+}
+.wew{
+	position: absolute;
+}
+#mod{
+ width: 1000px;
+ height: 1000px;
+}
+.wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+}
+.wrapper:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+}
+.wrapper > .grid {
+  display: inline-block;
+  vertical-align: middle;
+}
+.grid > .row { 
+  white-space: nowrap;
+}
+.grid > .row > .cell {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  outline: 1px solid rgba(0, 0, 0, 0.3);
+}
+.grid > .row > .cell:hover {
+  background-color: red;
+}
+.grid {
+  transform: rotateX(40deg) rotateZ(45deg);
+}
